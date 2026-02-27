@@ -44,7 +44,7 @@ st.markdown("""
     .hero h1 {
         font-size: 2.1rem; font-weight: 700; margin-bottom: 0.2rem;
         background: linear-gradient(90deg, #a5b4fc, #818cf8, #6366F1);
-        -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        -webkit-b   ackground-clip: text; -webkit-text-fill-color: transparent;
     }
     .hero p { font-size: 0.95rem; color: #9CA3AF !important; margin: 0; }
     .chips { display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center; margin-top: 1rem; }
@@ -132,7 +132,7 @@ if user_query := st.chat_input("Ask me anything about the book..."):
 
     with st.chat_message("assistant"):
         with st.spinner("Looking through the book..."):
-            result = db.query_with_threshold(user_query, threshold=0.5)
+            result = db.query_with_threshold(user_query, threshold=0.8)
         with st.spinner("Writing your answer..."):
             answer = gen.get_response(result["context"], user_query)
         st.markdown(answer)
