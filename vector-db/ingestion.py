@@ -23,7 +23,7 @@ class VectorStore:
     @staticmethod
     def _distance_to_similarity(distance):
         return 1 / (1 + distance)
-
+# update
     def query_with_threshold(self, user_query, n_results=5, threshold=0.8):
         """Retrieve chunks, silently filter by threshold.
         Returns context (empty if nothing passes) for the LLM."""
