@@ -22,4 +22,4 @@ def extract_and_chunk(pdf_path, chunk_size=1600, chunk_overlap=200):
                 "page_number": chunk.metadata.get("page", 0) + 1,
             },
         })
-    return docs
+    return docs         

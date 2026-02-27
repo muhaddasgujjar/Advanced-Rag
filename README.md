@@ -1,4 +1,4 @@
-# 📖 Advanced RAG — Dark Psychology
+    # 📖 Advanced RAG — Dark Psychology
 
 An **Advanced Retrieval-Augmented Generation** system that reads a Dark Psychology PDF and answers questions in simple, everyday language.
 

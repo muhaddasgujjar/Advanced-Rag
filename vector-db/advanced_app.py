@@ -132,7 +132,7 @@ if user_query := st.chat_input("Ask me anything about the book..."):
 
     with st.chat_message("assistant"):
         with st.spinner("Looking through the book..."):
-            result = db.query_with_threshold(user_query, threshold=0.8)
+            result = db.query_with_threshold(user_query, threshold=0.5)
         with st.spinner("Writing your answer..."):
             answer = gen.get_response(result["context"], user_query)
         st.markdown(answer)
